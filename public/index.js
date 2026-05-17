@@ -198,6 +198,12 @@ function Login() {
         window.location.href = `https://auth.hackclub.com/oauth/authorize?client_id=a2107a6fc2455c8eb2f8b48fd969844f&redirect_uri=${window.location.origin}%2Foauth%2Fcallback&response_type=code&scope=openid+profile+verification_status+slack_id`;
     }
     app.appendChild(loginbtn)
+    document.getElementById('projectsbtn').remove()
+    document.getElementById('usersbtn').remove()
+    document.getElementById('searchbtn').remove()
+    document.getElementById('sort').remove()
+    document.getElementById('status').remove()
+    document.getElementById('more').remove()
 }
 
 

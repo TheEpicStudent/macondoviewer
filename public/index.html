@@ -9,9 +9,9 @@
 <body>
     <h1 style="padding-top: 10px; margin-bottom: 0;">Macondo Viewer</h1>
     <div class="lazyhorizontal">
-        <button onclick="clearProjects(); setTimeout(() => {ExploreProjects('0', document.getElementById('sort').value, document.getElementById('status').value); ExploreProjects('5', document.getElementById('sort').value, document.getElementById('status').value)}, 500)">Projects</button>
-        <button onclick="clearProjects(); setTimeout(() => {ExploreUsers()}, 1000)">Users</button>
-        <button onclick="toggle('search')">Search</button>
+        <button id="projectsbtn" onclick="clearProjects(); setTimeout(() => {ExploreProjects('0', document.getElementById('sort').value, document.getElementById('status').value); ExploreProjects('5', document.getElementById('sort').value, document.getElementById('status').value)}, 500)">Projects</button>
+        <button id="usersbtn" onclick="clearProjects(); setTimeout(() => {ExploreUsers()}, 1000)">Users</button>
+        <button id="searchbtn" onclick="toggle('search')">Search</button>
     </div>
     <div class="lazyhorizontal">
     <select id="sort" onchange="clearProjects(); setTimeout(() => {ExploreProjects('0', this.value); ExploreProjects('5', this.value)}, 500)">
