@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap');
+
+body {
+    font-family: 'Roboto Flex', sans-serif;
+    margin: 0;
+    padding: 20px;
+    height: 100vh;
+    overflow: hidden;
+    background-image: radial-gradient(circle at 90% 20%, #3a3a3a, #252525, #000000);
+    background-repeat: no-repeat;
+    color: #fff;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.seperator {
+    width: 100%;
+    height: 1px;
+    background-color: #555;
+    margin: 20px 0;
+}
+.item {
+    background-color: rgba(255, 255, 255, 0.062);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 10px;
+    width: 300px;
+    min-height: 300px;
+    box-sizing: border-box;
+    transition: 500ms ease-in-out;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.item p {
+    margin:10px;
+}
+.item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: 500ms ease-in-out;
+}
+button {
+    background-color: #545454;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 500ms ease-in-out;
+}
+button:hover {
+    background-color: #737373;
+    transition: 500ms ease-in-out;
+}
+.app {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    width: 100%;
+    justify-content: center;
+}
+@keyframes fadeout {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+@keyframes fadein {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+.lazyvertical {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    align-items: center;
+}
+.lazyhorizontal {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.thumbnail {
+    width: 75%;
+    height: 300px;
+    background-color: #333;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.thumbnail.opentab {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+
+}
+.back-button {
+    background-color: #545454;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    width: 100px;
+    height: 40px;
+    position: absolute;
+}
+.warning-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1000;
+    display: none;
+}
+.thumbnail-owner {
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    margin: 10px;
+}
+.iteminvis {
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 10px;
+    width: 700px;
+    max-height: 200px;
+    box-sizing: border-box;
+    transition: 500ms ease-in-out;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow-y: scroll;
+    overflow-wrap: break-word;
+}
+.iteminvis:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: 500ms ease-in-out;
+}
+.iteminvis h1 {
+    font-size: 15px;
+}
+select {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+select:hover {
+    background-color: #555;
+}
+.item h1.item-title {
+    font-size: 30px;
+}
+.item h1 {
+    font-size: 18px;
+}
+.error {
+    width: 300px;
+    height: 500px;
+    display: none;
+    background-color: rgba(209, 15, 15, 0.432);
+    border: red solid 3px;
+    border-radius: 15px;
+}
+.badge {
+    background-color: #3885c964;
+    padding: 5px 10px;
+    margin-top: 5px;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 12px;
+}
+.user-image {
+    width: 100px;
+    height: 100px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    margin: 10px;
+    background-position: center;
+    background-size: cover;
+}
+input[type="text"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    height: 20px;
+}
